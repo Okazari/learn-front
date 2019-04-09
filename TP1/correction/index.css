@@ -1,0 +1,59 @@
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: darkred;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  color: black;
+  background-color: white;
+  padding: 10px;
+  font-size: 0.8rem;
+  flex: 2;
+  text-align: justify;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  margin-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign {
+  font-size: 0.9rem;
+}
+
+.image {
+  background-color: white;
+  flex: 6;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-image: url("https://webcdn.triongames.com/archeage/blogs/dragonraising/legends-return-dragons.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.stats {
+  color: black;
+  align-self: flex-end;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
