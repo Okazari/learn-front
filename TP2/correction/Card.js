@@ -28,10 +28,13 @@ class Card {
   }
 
   set name(name) {
-    if (typeof name === 'string' || name instanceof String && name.length > 0) {
-      this._name = name.toLowerCase()
+    if (
+      typeof name === "string" ||
+      (name instanceof String && name.length > 0)
+    ) {
+      this._name = name.toLowerCase();
     } else {
-      throw new Error('Name must be a string and cannot be empty.')
+      throw new Error("Name must be a string and cannot be empty.");
     }
   }
 
@@ -39,7 +42,9 @@ class Card {
     if (Number.isSafeInteger(health) && health > 0 && health <= 10) {
       this._health = health;
     } else {
-      throw new Error('Health must be a strictly positive integer. Max value is 10.');
+      throw new Error(
+        "Health must be a strictly positive integer. Max value is 10."
+      );
     }
   }
 
@@ -47,7 +52,9 @@ class Card {
     if (Number.isSafeInteger(health) && health >= 0 && health <= 10) {
       this._currentHealth = health;
     } else {
-      throw new Error('Current health must be a positive integer. Max value is 10.');
+      throw new Error(
+        "Current health must be a positive integer. Max value is 10."
+      );
     }
   }
 
@@ -55,24 +62,35 @@ class Card {
     if (Number.isSafeInteger(strength) && strength > 0 && strength <= 10) {
       this._strength = strength;
     } else {
-      throw new Error('Strength must be a strictly positive integer. Max value is 10.');
+      throw new Error(
+        "Strength must be a strictly positive integer. Max value is 10."
+      );
     }
   }
-  
+
   set category(category) {
-    const categories = new Set(['electric', 'fire', 'warrior', 'water', 'wizard']);
-    if (typeof category === 'string' || category instanceof String && category.length > 0) {
+    const categories = new Set([
+      "electric",
+      "fire",
+      "warrior",
+      "water",
+      "wizard"
+    ]);
+    if (
+      typeof category === "string" ||
+      (category instanceof String && category.length > 0)
+    ) {
       if (categories.has(category.toLowerCase())) {
         this._category = category;
       } else {
-        throw new Error('Category must be one of the following values: ' + categories)
+        throw new Error(
+          "Category must be one of the following values: " + categories
+        );
       }
     } else {
-      throw new Error('Category must be a string.');
+      throw new Error("Category must be a string.");
     }
   }
-
 }
 
-module.exports = Card;
-
+export default Card;

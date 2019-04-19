@@ -1,8 +1,7 @@
 function playTurnBasedBattle(card1, card2) {
-  
   let round = 0;
   let newHealth;
-  let attacker; 
+  let attacker;
   let defender;
 
   while (card1.currentHealth > 0 && card2.currentHealth > 0) {
@@ -16,8 +15,8 @@ function playTurnBasedBattle(card1, card2) {
   return {
     nbOfRounds: round,
     winner: card1.currentHealth > 0 ? card1 : card2,
-    loser: card1.currentHealth > 0 ? card2 : card1,
-  }
+    loser: card1.currentHealth > 0 ? card2 : card1
+  };
 }
 
-module.exports = playTurnBasedBattle;
+export default playTurnBasedBattle;

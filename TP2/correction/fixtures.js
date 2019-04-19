@@ -1,82 +1,80 @@
-const fixtures = [
+export default [
   {
-    name: 'link',
+    name: "link",
     health: 8,
     strength: 3,
-    category: 'warrior',
+    category: "warrior"
   },
   {
-    name: 'charizard',
+    name: "charizard",
     health: 9,
     strength: 4,
-    category: 'fire',
+    category: "fire"
   },
   {
-    name: 'lulu',
+    name: "lulu",
     health: 10,
     strength: 2,
-    category: 'wizard',
+    category: "wizard"
   },
   {
-    name: 'bayonetta',
+    name: "bayonetta",
     health: 7,
     strength: 5,
-    category: 'warrior',
+    category: "warrior"
   },
   {
-    name: 'kratos',
+    name: "kratos",
     health: 10,
     strength: 5,
-    category: 'warrior',
+    category: "warrior"
   },
   {
-    name: 'hermione',
+    name: "hermione",
     health: 5,
     strength: 6,
-    category: 'wizard',
+    category: "wizard"
   },
   {
-    name: 'wonder woman',
+    name: "wonder woman",
     health: 9,
     strength: 6,
-    category: 'warrior',
+    category: "warrior"
   },
   {
-    name: 'natsu',
+    name: "natsu",
     health: 8,
     strength: 5,
-    category: 'fire',
+    category: "fire"
   },
   {
-    name: 'gandalf',
+    name: "gandalf",
     health: 9,
     strength: 3,
-    category: 'wizard',
+    category: "wizard"
   },
   {
-    name: 'flareon',
+    name: "flareon",
     health: 6,
     strength: 3,
-    category: 'fire',
+    category: "fire"
   },
   {
-    name: 'merlin',
+    name: "merlin",
     health: 8,
     strength: 3,
-    category: 'wizard',
+    category: "wizard"
   },
   {
-    name: 'squirtle',
+    name: "squirtle",
     health: 9,
     strength: 2,
-    category: 'water',
+    category: "water"
   },
   {
-    name: 'pika',
+    name: "pika",
     health: 8,
     strength: 3,
-    category: 'electric',
-  },
+    category: "electric"
+  }
 ];
-
-module.exports = fixtures;

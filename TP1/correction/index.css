@@ -2,7 +2,7 @@
   width: 200px;
   height: 300px;
   background-color: darkred;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -19,7 +19,7 @@
 
 .description {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   font-size: 0.8rem;
   flex: 2;
