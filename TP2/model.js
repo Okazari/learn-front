@@ -91,26 +91,39 @@ const card = {
 //   setTimeout(() => console.log(a), 1000);
 // }
 
-const createCard = (name, health) => {
-  return {
-    name,
-    health
-  };
-};
+// const createCard = (name, health) => {
+//   return {
+//     name,
+//     health
+//   };
+// };
 
-card.name;
+// card.name;
 
-new Card(name, health);
+// new Card(name, health);
 
-card.name;
+// card.name;
 
-class Card {
-  constructor(name, health) {
-    this.name = name;
-    this.health = health;
-  }
+// class Card {
+//   constructor(name, health) {
+//     this.name = name;
+//     this.health = health;
+//   }
 
-  looseHealth() {
-    this.health--;
-  }
-}
+//   looseHealth() {
+//     this.health--;
+//   }
+// }
+
+//Card.js
+
+// class Card {}
+
+// const createCard = () => {};
+// export const cardList = [new Card()];
+// export default Card;
+
+// //toto.js
+// import Card, { cardList } from "Card";
+
+// new Card();
