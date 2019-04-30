@@ -55,8 +55,7 @@ export default {
 }
 
 .spell {
-  background-color: aqua;
-  color: black;
+  background-color: darkblue;
 }
 
 .creature {

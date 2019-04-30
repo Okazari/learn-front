@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="column">
-      <CardForm :card="card"/>
+      <CardForm :card="card" @submit="addCard"/>
     </div>
     <div class="column">
       <Card
@@ -19,16 +19,33 @@
 
 <script>
 import { Card, CardForm } from "../components";
+import { saveCard } from "../services";
 
 export default {
   components: {
     Card,
     CardForm
   },
+  methods: {
+    addCard: function() {
+      saveCard(this.card).then(() => (this.card = {}));
+    }
+  },
   data: function() {
     return {
+      cardList: [
+        {
+          name: "Toto"
+        }
+      ],
       card: {
-        name: "bla"
+        name: "",
+        description: "",
+        health: 0,
+        strength: 0,
+        image: "",
+        category: "",
+        author: ""
       }
     };
   }
@@ -40,10 +57,25 @@ export default {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
+  height: calc(100vh - 60px);
+  min-height: 500px;
   display: flex;
   justify-content: space-between;
 }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+

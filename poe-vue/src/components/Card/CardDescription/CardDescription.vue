@@ -1,5 +1,5 @@
 <template>
-  <div class="description">{{description}}</div>
+  <p class="description">{{description}}</p>
 </template>
 
 <script>
@@ -10,6 +10,7 @@ export default {
 
 <style>
 .description {
+  white-space: pre-wrap;
   color: black;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;

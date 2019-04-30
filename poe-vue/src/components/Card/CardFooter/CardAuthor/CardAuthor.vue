@@ -1,5 +1,5 @@
 <template>
-  <div class="sign">{{author}}</div>
+  <div class="sign">by {{author}}</div>
 </template>
 
 <script>

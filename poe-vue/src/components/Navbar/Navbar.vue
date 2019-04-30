@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 .navbar {
   display: flex;
-  background-color: #eee;
+  background-color: darkcyan;
   margin-bottom: 10px;
   height: 50px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -32,13 +32,12 @@ export default {
 
 .logo {
   font-size: 1.5em;
-  border-right: solid 1px #ccc;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: none;
   min-width: 100px;
 
@@ -49,19 +48,19 @@ export default {
 }
 
 .navbar__link {
-  border-right: solid 1px #ccc;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 10px;
-  color: black;
+  color: white;
   text-decoration: none;
   min-width: 100px;
+  transition: background-color 200ms;
 
   &:hover {
-    background-color: #fff;
+    background-color: lighten(darkcyan, 5);
   }
 }
 </style>
