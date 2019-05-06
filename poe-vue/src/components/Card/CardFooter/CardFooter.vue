@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div v-if="author || strength || health" class="footer">
     <CardAuthor :author="author"/>
     <CardStats :strength="strength" :health="health"/>
   </div>

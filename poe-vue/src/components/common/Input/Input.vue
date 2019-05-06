@@ -7,10 +7,19 @@
 
 <script>
 export default {
-  props: ["value", "type", "label", "id"],
+  props: ["value", "required", "type", "label", "id"],
+  computed: {
+    errors: function() {
+      const errors = [];
+      if (this.required && !this.value) errors.push("required");
+    }
+  },
   methods: {
     onInput: function(event) {
-      this.$emit("input", event.target.value);
+      this.$emit("input", {
+        value: event.target.value,
+        errors: this.errors
+      });
     }
   }
 };

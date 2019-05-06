@@ -4,16 +4,19 @@
     :class="{
       creature: category === 'creature',
       spell: category === 'spell',
+      player: category === 'player',
     }"
   >
     <CardTitle :title="name"/>
     <CardImage :src="image"/>
     <CardDescription :description="description"/>
     <CardFooter :author="author" :strength="strength" :health="health"/>
+    <Button v-if="canDelete" @click="onDelete">Delete</Button>
   </div>
 </template>
 
 <script>
+import { Button } from "../common";
 import CardTitle from "./CardTitle";
 import CardImage from "./CardImage";
 import CardFooter from "./CardFooter";
@@ -21,19 +24,27 @@ import CardDescription from "./CardDescription";
 
 export default {
   props: [
+    "id",
     "name",
     "category",
     "image",
     "description",
     "author",
     "strength",
-    "health"
+    "health",
+    "canDelete"
   ],
   components: {
     CardTitle,
     CardImage,
     CardFooter,
-    CardDescription
+    CardDescription,
+    Button
+  },
+  methods: {
+    onDelete: function() {
+      this.$emit("delete", this.id);
+    }
   }
 };
 </script>
@@ -60,5 +71,10 @@ export default {
 
 .creature {
   background-color: cornflowerblue;
+}
+
+.player {
+  background-color: goldenrod;
+  color: black;
 }
 </style>

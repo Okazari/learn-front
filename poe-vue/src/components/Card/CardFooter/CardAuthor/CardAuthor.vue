@@ -1,12 +1,15 @@
 <template>
-  <div class="sign">by {{author}}</div>
+  <div class="sign">{{displayedAuthor}}</div>
 </template>
 
 <script>
-import CardAuthor from "./CardAuthor";
-
 export default {
-  props: ["author"]
+  props: ["author"],
+  computed: {
+    displayedAuthor: function() {
+      return this.author && `by ${this.author}`;
+    }
+  }
 };
 </script>
 

@@ -1,39 +1,36 @@
 <template>
   <div class="container">
     <div class="column">
-      <CardForm :card="card" @submit="addCard"/>
+      <PlayerForm :card="player" @submit="addCard"/>
     </div>
     <div class="column">
       <Card
-        :name="card.name"
-        :description="card.description"
-        :strength="card.strength"
-        :health="card.health"
-        :author="card.author"
-        :category="card.category"
-        :image="card.image"
+        :name="player.name"
+        :description="player.description"
+        :strength="player.strength"
+        :health="player.health"
+        :author="player.author"
+        :category="player.category"
+        :image="player.image"
       />
     </div>
   </div>
 </template>
 
 <script>
-import { Card, CardForm } from "../components";
-import { saveCard } from "../services";
+import { PlayerForm, Player } from "../components";
 
 export default {
-  components: {
-    Card,
-    CardForm
-  },
+  components: { PlayerForm, Player },
+
   methods: {
-    addCard: function() {
-      saveCard(this.card).then(() => (this.card = {}));
+    addPlayer: function() {
+      savePlayer(this.player).then(() => (this.player = {}));
     }
   },
   data: function() {
     return {
-      card: {
+      player: {
         name: "",
         description: "",
         health: 0,
@@ -46,6 +43,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .column {
@@ -62,9 +60,6 @@ export default {
   justify-content: space-between;
 }
 </style>
-
-
-
 
 
 

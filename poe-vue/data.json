@@ -1,4 +1,13 @@
 {
+  "players": [
+    {
+      "name": "Benjamin",
+      "pseudo": "Okazari",
+      "lastName": "Plouzennec",
+      "quote": "Do it.",
+      "avatar": "https://res.cloudinary.com/teepublic/image/private/s--kn7Ugdxs--/t_Preview/b_rgb:191919,c_limit,f_auto,h_313,q_90,w_313/v1542229594/production/designs/3504206_0"
+    }
+  ],
   "cards": [
     {
       "name": "My super card",
@@ -8,66 +17,6 @@
       "health": 10,
       "author": "BenJ",
       "id": 1
-    },
-    {
-      "name": "efezf",
-      "description": "",
-      "health": 0,
-      "strength": "2",
-      "image": "zefzef",
-      "category": "other",
-      "author": "zefzef",
-      "id": 2
-    },
-    {
-      "name": "efezf",
-      "description": "",
-      "health": 0,
-      "strength": "2",
-      "image": "zefzef.com",
-      "category": "other",
-      "author": "zefzef",
-      "id": 3
-    },
-    {
-      "name": "efezf",
-      "description": "",
-      "health": 0,
-      "strength": "2",
-      "image": "http://zefzef.com",
-      "category": "other",
-      "author": "zefzef",
-      "id": 4
-    },
-    {
-      "name": "",
-      "description": "",
-      "health": 0,
-      "strength": 0,
-      "image": "",
-      "category": "",
-      "author": "",
-      "id": 5
-    },
-    {
-      "name": "ezfezfez",
-      "description": "zefezfzfezefzeffze",
-      "health": 0,
-      "strength": 0,
-      "image": "http://zefzef.com",
-      "category": "creature",
-      "author": "zefezf",
-      "id": 6
-    },
-    {
-      "name": "toto",
-      "description": "",
-      "health": 0,
-      "strength": 0,
-      "image": "",
-      "category": "",
-      "author": "",
-      "id": 7
     }
   ]
 }

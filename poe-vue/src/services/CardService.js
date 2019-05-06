@@ -1,15 +1,9 @@
-const API = "http://localhost:8081/cards";
+import http from "./HTTPService";
 
-const defaultHeaders = new Headers();
-defaultHeaders.append("Content-Type", "application/json");
+const API = "cards";
 
-const parseJSON = response => response.json();
+export const getAllCards = () => http.get(API);
 
-export const getAllCards = () => fetch(API).then(parseJSON);
+export const saveCard = card => http.post(API, card);
 
-export const saveCard = card =>
-  fetch(API, {
-    headers: defaultHeaders,
-    method: "POST",
-    body: JSON.stringify(card)
-  }).then(parseJSON);
+export const deleteCard = id => http.delete(`${API}/${id}`);
