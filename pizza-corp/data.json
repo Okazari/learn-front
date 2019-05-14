@@ -1,0 +1,88 @@
+{
+  "ingredients": [
+    {
+      "id": 0,
+      "name": "Mozzarella",
+      "price": 1
+    },
+    {
+      "id": 1,
+      "name": "Jambon",
+      "price": 1.5
+    },
+    {
+      "id": 2,
+      "name": "Peperroni",
+      "price": 1.5
+    },
+    {
+      "id": 3,
+      "name": "Chèvre",
+      "price": 1
+    }
+  ],
+  "pizzas": [
+    {
+      "name": "ezzef",
+      "ingredients": [
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        },
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        },
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        },
+        {
+          "id": 1,
+          "name": "Jambon",
+          "price": 1.5
+        },
+        {
+          "id": 1,
+          "name": "Jambon",
+          "price": 1.5
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "zefzefzef",
+      "ingredients": [
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        },
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        },
+        {
+          "id": 1,
+          "name": "Jambon",
+          "price": 1.5
+        },
+        {
+          "id": 1,
+          "name": "Jambon",
+          "price": 1.5
+        },
+        {
+          "id": 0,
+          "name": "Mozzarella",
+          "price": 1
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
